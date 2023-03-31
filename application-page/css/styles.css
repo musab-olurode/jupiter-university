@@ -1,0 +1,158 @@
+.header {
+  background: #074cb3;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem 0rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  background: #074cb3;
+  color: white;
+  padding: 0.3rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.btn--danger {
+  background: none;
+  color: rgb(245, 24, 24);
+  border: 1px solid rgb(245, 24, 24);
+}
+
+.show {
+  display: block;
+}
+
+.show-anim {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-anim {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes hide {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+main {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+main .container {
+  padding: 2rem 1rem;
+  order: 2;
+  flex: 2 1 0%;
+}
+main .container .btn {
+  float: right;
+  margin: 2rem 0rem 0rem 0rem;
+}
+main .container .btn.back {
+  float: left;
+}
+main .container__title {
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: center;
+}
+main .container .form-container {
+  text-transform: capitalize;
+  margin: 0 auto;
+}
+main .container .form-container__title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+main .container .form-container__title span {
+  display: block;
+  background: #074cb3;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 100%;
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+main .container .form-container__title p {
+  color: #074cb3;
+}
+main .container .form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+main .container .form-container .form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+main .container .form-container .form__group input,
+main .container .form-container .form__group select {
+  border: 1px solid rgba(128, 128, 128, 0.548);
+  padding: 0.5rem;
+  border-radius: 3px;
+  outline: none;
+  background: none;
+}
+main .container .form-container .form__group label {
+  font-weight: 600;
+}
+main .section-2 {
+  padding: 4rem 1rem;
+  order: 1;
+  flex: 1 1 20rem;
+}
+main .section-2 a {
+  color: blue;
+}
+main .section-2 .img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main .section-2 .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section-2 p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    max-width: 100%;
+  }
+  main .container {
+    flex: 2 1 0%;
+    order: 2;
+  }
+  main .container__title {
+    font-size: 1.2rem;
+  }
+  main .section-2 {
+    padding: 4rem 4rem;
+    flex: 1 1 20rem;
+    order: 1;
+  }
+  main .section-2 p {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/application-page/css/reset.css">
+        <link rel="stylesheet" href="/application-page/css/styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <h1>Jupiter</h1>
+        </header>
+
+        <main>
+            <section class="container">
+                <h1 class="container__title">admission application</h1>
+                <div class="form-container step-1 ">
+                    <h1 class="form-container__title">
+                        <span>1</span>
+                        <p>Your Information</p>
+                    </h1>
+                    <form class="form">
+                        <div class="form__group">
+                            <label for="">your name</label>
+                            <input type="text">
+                        </div>
+                        <div class="form__group">
+                            <label for="">last name</label>
+                            <input type="text">
+                        </div>
+                        <div class="form__group">
+                            <label for="">middle name(optional)</label>
+                            <input type="text">
+                        </div>
+                        <div class="form__group">
+                            <label for="">Email</label>
+                            <input type="email">
+                        </div>
+                    </form>
+                    <button class="btn next">next</button>
+                </div>
+                <div class="form-container step-2 hide hide-anim">
+                    <h1 class="form-container__title">
+                        <span>2</span>
+                        <p>Degree Information</p>
+                    </h1>
+                    <form class="form">
+                        <div class="form__group">
+                            <label for="">Academic Field/Major</label>
+                            <select name="" id="">
+                                <option value="def"></option>
+                                <option value="opt1">option 1</option>
+                                <option value="opt2">option 2</option>
+                                <option value="opt3">option 3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="credits" id="credits">
+                            <label for="credits">I have academic credits to transfer to Jupiter Uni</label>
+                        </div>
+                        <div class="form__group">
+                            <label for="">Country of Residence</label>
+                            <select name="" id="">
+                                <option value="def"></option>
+                                <option value="opt1">option 1</option>
+                                <option value="opt2">option 2</option>
+                                <option value="opt3">option 3</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label for="">Mobile number</label>
+                            <div>
+                                <select name="" id="">
+                                    <option value="def" disabled>Country code</option>
+                                    <option value="opt1">option 1</option>
+                                    <option value="opt2">option 2</option>
+                                    <option value="opt3">option 3</option>
+                                </select>
+                                <input type="number">
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="">Gender</label>
+                            <select name="" id="">
+                                <option value="def"></option>
+                                <option value="opt1">option 1</option>
+                                <option value="opt2">option 2</option>
+                                <option value="opt3">option 3</option>
+                            </select>
+                        </div>
+                    </form>
+                    <button class="btn btn--danger back">Back</button>
+                    <button class="btn">Submit</button>
+                </div>
+            </section>
+            <section class="section-2">
+                <div class="img">
+                    <img src="./assets/images/reg/img.png" alt="">
+                </div>
+                <p>
+                    By completing this form, I hereby affirm that I
+                    agree with the <a href="">Jupiter Uni terms and plicy</a>
+                    terms and to receive updates from the
+                    university that may include emails, calls, and
+                    text messages.
+                </p>
+            </section>
+        </main>
+
+
+
+
+        <script src="/application-page/js/index.js"></script>
+    </body>
+
+</html>
